@@ -17,19 +17,14 @@ import sys
 # Add parent directory to path for imports
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-# Import analysis modules (adjust paths as needed)
+# Import analysis modules
 try:
-    from analyzer import (
-        parse_fit_file,
-        analyze_session,
-        time_in_hr_zones,
-        time_in_power_zones,
-        hr_zones,
-        power_zones,
-    )
-except ImportError:
-    # Fallback for development
-    pass
+    from backend.parser import FITParser
+    from backend.metrics import MetricsCalculator, SessionSummary
+except ImportError as e:
+    st.error(f"⚠️ Backend modules not available: {e}")
+    FITParser = None
+    MetricsCalculator = None
 
 # ─────────────────────────────────────────────────────────────────────────────
 # PAGE CONFIG & STYLING
@@ -706,11 +701,26 @@ with col_generate:
         else:
             with st.spinner("🔄 Analyzing your FIT file..."):
                 try:
-                    # Parse FIT file
-                    df = parse_fit_file(st.session_state.uploaded_file)
+                    if FITParser is None:
+                        st.error("Backend modules not loaded")
+                        st.stop()
+
+                    # Parse FIT file using backend
+                    parser = FITParser()
+                    df = parser.parse(st.session_state.uploaded_file)
+
+                    # Calculate metrics
+                    athlete_data = {
+                        "ftp": int(profile.get("ftp", 250)),
+                        "max_hr": int(profile.get("max_hr", 190)),
+                        "weight_kg": float(profile.get("weight", 75))
+                    }
+                    calc = MetricsCalculator(athlete_data=athlete_data)
+                    session = calc.analyze_session(df)
 
                     # Store in session
                     st.session_state.fit_data = df
+                    st.session_state.session_summary = session
                     st.session_state.analysis_complete = True
 
                     st.success("✓ Analysis complete!")
