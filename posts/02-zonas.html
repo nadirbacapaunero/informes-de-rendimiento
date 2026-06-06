@@ -1,0 +1,43 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,700;0,800;0,900;1,800;1,900&family=Barlow:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1080px;height:1350px;font-family:'Barlow',sans-serif;color:#f4f6ff;
+    background:radial-gradient(1200px 760px at 82% -8%,rgba(225,29,46,0.20),transparent 60%),radial-gradient(900px 620px at 8% 16%,rgba(20,40,120,0.55),transparent 60%),linear-gradient(180deg,#060a1c 0%,#080d22 100%);overflow:hidden;-webkit-font-smoothing:antialiased}
+  .grid{position:absolute;inset:0;opacity:.3;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:90px 90px;-webkit-mask-image:radial-gradient(760px 520px at 50% 20%,rgba(0,0,0,.9),transparent 80%)}
+  .wrap{position:relative;width:100%;height:100%;padding:78px 80px;display:flex;flex-direction:column}
+  .eyebrow{display:inline-flex;align-items:center;gap:14px;padding:13px 24px;border-radius:999px;background:rgba(225,29,46,.08);border:1px solid rgba(225,29,46,.32);width:fit-content;font-family:'JetBrains Mono',monospace;font-size:21px;letter-spacing:.18em;text-transform:uppercase;color:#ffd9de}
+  .eyebrow .dot{width:11px;height:11px;border-radius:50%;background:#ff3a4b;box-shadow:0 0 18px #ff3a4b}
+  h1{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-style:italic;text-transform:uppercase;font-size:96px;line-height:.9;letter-spacing:-.01em;margin-top:34px}
+  h1 .grad{background:linear-gradient(135deg,#ff3a4b 0%,#ff7a35 50%,#ffb020 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .zones{display:flex;flex-direction:column;gap:20px;margin-top:50px}
+  .zone{display:flex;align-items:center;gap:26px;padding:26px 30px;border-radius:18px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08)}
+  .bar{width:10px;align-self:stretch;border-radius:6px}
+  .zname{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-style:italic;text-transform:uppercase;font-size:46px;line-height:1}
+  .zdesc{font-size:23px;color:rgba(232,237,255,.6);margin-top:4px}
+  .zrange{margin-left:auto;font-family:'JetBrains Mono',monospace;font-weight:600;font-size:30px;text-align:right;white-space:nowrap}
+  .foot{display:flex;align-items:center;gap:20px;margin-top:auto;padding-top:36px}
+  .mark{width:70px;height:70px;border-radius:50%;background:#0a1430;border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center}
+  .wm{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-style:italic;font-size:32px}
+  .cta{margin-left:auto;font-size:24px;color:rgba(232,237,255,.62)}
+  .cta b{color:#18E6D8;font-weight:600}
+</style></head>
+<body>
+<div class="grid"></div>
+<div class="wrap">
+  <div class="eyebrow"><span class="dot"></span>GUÍA · ZONAS DE ENTRENAMIENTO</div>
+  <h1>LAS 4 ZONAS QUE<br>TODO CORREDOR<br><span class="grad">DEBE DOMINAR</span></h1>
+  <div class="zones">
+    <div class="zone"><div class="bar" style="background:#18E6D8"></div><div><div class="zname" style="color:#18E6D8">Aeróbica</div><div class="zdesc">Base. Podés mantener una conversación.</div></div><div class="zrange" style="color:#18E6D8">60–70%<br><span style="font-size:20px;color:rgba(232,237,255,.4)">FC máx</span></div></div>
+    <div class="zone"><div class="bar" style="background:#FFB020"></div><div><div class="zname" style="color:#FFB020">Tempo</div><div class="zdesc">Cómodamente duro. Ritmo sostenido.</div></div><div class="zrange" style="color:#FFB020">70–80%<br><span style="font-size:20px;color:rgba(232,237,255,.4)">FC máx</span></div></div>
+    <div class="zone"><div class="bar" style="background:#ff3a4b"></div><div><div class="zname" style="color:#ff3a4b">VO2 Max</div><div class="zdesc">Difícil y rápido. Potencia aeróbica.</div></div><div class="zrange" style="color:#ff3a4b">80–90%<br><span style="font-size:20px;color:rgba(232,237,255,.4)">FC máx</span></div></div>
+    <div class="zone"><div class="bar" style="background:#9D7BFF"></div><div><div class="zname" style="color:#9D7BFF">Anaeróbica</div><div class="zdesc">Máximo esfuerzo. Series cortas.</div></div><div class="zrange" style="color:#9D7BFF">90–100%<br><span style="font-size:20px;color:rgba(232,237,255,.4)">FC máx</span></div></div>
+  </div>
+  <div class="foot">
+    <div class="mark"><svg width="44" height="44" viewBox="0 0 200 200"><polygon points="38,56 92,56 83,74 47,74" fill="#E11D2E"/><polygon points="108,56 162,56 153,74 117,74" fill="#E11D2E"/><polygon points="42,82 158,82 100,178" fill="#E11D2E"/><polygon points="76,93 124,93 100,132" fill="#0a1430"/></svg></div>
+    <div class="wm">FAST TIMES</div>
+    <div class="cta">📌 <b>Guardá</b> este post</div>
+  </div>
+</div>
+</body></html>

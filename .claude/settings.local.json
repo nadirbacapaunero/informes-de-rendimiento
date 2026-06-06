@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "mcp__Claude_in_Chrome__navigate",
+      "mcp__Claude_in_Chrome__computer",
+      "WebFetch(domain:fasttimes-web.vercel.app)",
+      "Read(//c/Users/Noxie-PC/.claude/skills/ui-ux-pro-max/**)",
+      "Bash(python3 scripts/search.py \"sports coaching running triathlon professional modern energetic\" --design-system -p \"Fast Times\" -f markdown)",
+      "Bash(curl -s \"https://fasttimes-web.vercel.app\")",
+      "mcp__mcp-registry__list_connectors",
+      "mcp__Claude_in_Chrome__list_connected_browsers",
+      "mcp__Claude_in_Chrome__tabs_create_mcp",
+      "Bash(where chrome *)",
+      "Bash(where node *)",
+      "Bash(node render.js)",
+      "Bash(node render-logos.js)"
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,700;0,800;0,900;1,800;1,900&family=Barlow:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1080px;height:1350px;font-family:'Barlow',sans-serif;color:#f4f6ff;
+    background:
+      radial-gradient(1200px 760px at 82% -8%, rgba(225,29,46,0.22), transparent 60%),
+      radial-gradient(900px 620px at 8% 16%, rgba(20,40,120,0.55), transparent 60%),
+      linear-gradient(180deg,#060a1c 0%,#080d22 100%);
+    overflow:hidden;-webkit-font-smoothing:antialiased}
+  .grid{position:absolute;inset:0;opacity:.35;
+    background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
+    background-size:90px 90px;
+    -webkit-mask-image:radial-gradient(760px 520px at 62% 28%,rgba(0,0,0,.9),transparent 80%)}
+  .wrap{position:relative;width:100%;height:100%;padding:84px 80px;display:flex;flex-direction:column}
+  .eyebrow{display:inline-flex;align-items:center;gap:14px;padding:14px 24px;border-radius:999px;
+    background:rgba(225,29,46,.08);border:1px solid rgba(225,29,46,.32);width:fit-content;
+    font-family:'JetBrains Mono',monospace;font-size:22px;letter-spacing:.18em;text-transform:uppercase;color:#ffd9de}
+  .eyebrow .dot{width:11px;height:11px;border-radius:50%;background:#ff3a4b;box-shadow:0 0 18px #ff3a4b}
+  .eyebrow .num{color:#18E6D8;font-weight:600}
+  h1{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-style:italic;text-transform:uppercase;
+    font-size:158px;line-height:.86;letter-spacing:-.01em;margin-top:48px}
+  h1 .grad{background:linear-gradient(135deg,#ff3a4b 0%,#ff7a35 50%,#ffb020 100%);
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .lead{font-size:34px;line-height:1.5;color:rgba(232,237,255,.62);max-width:760px;margin-top:40px}
+  .lead b{color:#f4f6ff;font-weight:600}
+  .stats{display:flex;gap:0;margin-top:auto;margin-bottom:40px;border:1px solid rgba(255,255,255,.1);border-radius:20px;overflow:hidden}
+  .stat{flex:1;padding:34px 28px;text-align:center;border-right:1px solid rgba(255,255,255,.1)}
+  .stat:last-child{border-right:none}
+  .stat .v{font-family:'JetBrains Mono',monospace;font-weight:600;font-size:52px;color:#18E6D8}
+  .stat .l{font-size:20px;letter-spacing:.12em;text-transform:uppercase;color:rgba(232,237,255,.5);margin-top:6px}
+  .foot{display:flex;align-items:center;gap:20px}
+  .mark{width:74px;height:74px;border-radius:50%;background:#0a1430;border:1px solid rgba(255,255,255,.1);
+    display:flex;align-items:center;justify-content:center}
+  .wm{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-style:italic;font-size:34px;letter-spacing:.02em}
+  .handle{margin-left:auto;font-family:'JetBrains Mono',monospace;font-size:24px;color:rgba(232,237,255,.5)}
+</style></head>
+<body>
+<div class="grid"></div>
+<div class="wrap">
+  <div class="eyebrow"><span class="dot"></span><span><span class="num">+10</span> AÑOS · COACHING DE RESISTENCIA</span></div>
+  <h1>METE TU<br><span class="grad">MEJOR MARCA</span></h1>
+  <p class="lead">Entrenamiento guiado por <b>datos fisiológicos reales</b> —potencia, frecuencia cardíaca y umbrales— para running, ciclismo, natación y triatlón.</p>
+  <div class="stats">
+    <div class="stat"><div class="v">320+</div><div class="l">PBs rotos</div></div>
+    <div class="stat"><div class="v">94%</div><div class="l">Retención</div></div>
+    <div class="stat"><div class="v">+30</div><div class="l">Atletas activos</div></div>
+  </div>
+  <div class="foot">
+    <div class="mark">
+      <svg width="46" height="46" viewBox="0 0 200 200">
+        <polygon points="38,56 92,56 83,74 47,74" fill="#E11D2E"/>
+        <polygon points="108,56 162,56 153,74 117,74" fill="#E11D2E"/>
+        <polygon points="42,82 158,82 100,178" fill="#E11D2E"/>
+        <polygon points="76,93 124,93 100,132" fill="#0a1430"/>
+      </svg>
+    </div>
+    <div class="wm">FAST TIMES</div>
+    <div class="handle">@f.a.s.t.t.i.m.e.s</div>
+  </div>
+</div>
+</body></html>

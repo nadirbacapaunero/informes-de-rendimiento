@@ -1,0 +1,36 @@
+# Environment
+.venv/
+venv/
+env/
+*.egg-info/
+__pycache__/
+*.pyc
+*.pyo
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project
+archive/
+node_modules/
+*.log
+.streamlit/secrets.toml
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Data
+*.fit
+*.csv
+!requirements.txt

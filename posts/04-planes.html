@@ -1,0 +1,47 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,400;0,700;0,800;0,900;1,800;1,900&family=Barlow:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{width:1080px;height:1350px;font-family:'Barlow',sans-serif;color:#f4f6ff;
+    background:radial-gradient(1200px 760px at 82% -8%,rgba(225,29,46,0.22),transparent 60%),radial-gradient(900px 620px at 8% 16%,rgba(20,40,120,0.55),transparent 60%),linear-gradient(180deg,#060a1c 0%,#080d22 100%);overflow:hidden;-webkit-font-smoothing:antialiased}
+  .grid{position:absolute;inset:0;opacity:.28;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:90px 90px;-webkit-mask-image:radial-gradient(760px 520px at 50% 16%,rgba(0,0,0,.9),transparent 80%)}
+  .wrap{position:relative;width:100%;height:100%;padding:74px 70px;display:flex;flex-direction:column}
+  .eyebrow{display:inline-flex;align-items:center;gap:14px;padding:13px 24px;border-radius:999px;background:rgba(225,29,46,.08);border:1px solid rgba(225,29,46,.32);width:fit-content;font-family:'JetBrains Mono',monospace;font-size:21px;letter-spacing:.18em;text-transform:uppercase;color:#ffd9de;margin:0 auto}
+  .eyebrow .dot{width:11px;height:11px;border-radius:50%;background:#ff3a4b;box-shadow:0 0 18px #ff3a4b}
+  h1{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-style:italic;text-transform:uppercase;font-size:92px;line-height:.9;letter-spacing:-.01em;margin-top:28px;text-align:center}
+  h1 .grad{background:linear-gradient(135deg,#ff3a4b 0%,#ff7a35 50%,#ffb020 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .plans{display:flex;gap:20px;margin-top:54px}
+  .plan{flex:1;padding:38px 28px;border-radius:22px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.09);display:flex;flex-direction:column}
+  .plan.feat{background:linear-gradient(180deg,rgba(225,29,46,.16),rgba(225,29,46,.04));border:2px solid #ff3a4b;box-shadow:0 0 50px -10px rgba(225,29,46,.5);transform:translateY(-14px)}
+  .tag{font-family:'JetBrains Mono',monospace;font-size:16px;letter-spacing:.12em;text-transform:uppercase;color:#ff3a4b;height:22px}
+  .pname{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-style:italic;text-transform:uppercase;font-size:46px;margin-top:10px}
+  .price{font-family:'JetBrains Mono',monospace;font-weight:600;font-size:40px;color:#18E6D8;margin:14px 0 22px}
+  .price span{font-size:20px;color:rgba(232,237,255,.45)}
+  .feat .price{color:#fff}
+  .li{font-size:24px;color:rgba(232,237,255,.7);padding:11px 0;border-top:1px solid rgba(255,255,255,.08)}
+  .li:first-of-type{border-top:none}
+  .btn{margin-top:46px;align-self:center;padding:26px 64px;border-radius:16px;font-family:'Barlow',sans-serif;font-weight:700;font-size:30px;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:linear-gradient(135deg,#ff3a4b 0%,#E11D2E 100%);box-shadow:0 14px 50px -12px rgba(225,29,46,.8),inset 0 1px 0 rgba(255,255,255,.2)}
+  .foot{display:flex;align-items:center;gap:18px;margin-top:auto;padding-top:34px}
+  .mark{width:66px;height:66px;border-radius:50%;background:#0a1430;border:1px solid rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center}
+  .wm{font-family:'Barlow Condensed',sans-serif;font-weight:900;font-style:italic;font-size:30px}
+  .handle{margin-left:auto;font-family:'JetBrains Mono',monospace;font-size:22px;color:rgba(232,237,255,.5)}
+</style></head>
+<body>
+<div class="grid"></div>
+<div class="wrap">
+  <div class="eyebrow"><span class="dot"></span>PLANES PERSONALIZADOS</div>
+  <h1>ELEGÍ CÓMO<br><span class="grad">QUERÉS CORRER</span></h1>
+  <div class="plans">
+    <div class="plan"><div class="tag"></div><div class="pname">Amateur</div><div class="price">$99<span>/mes</span></div><div class="li">Plan adaptado</div><div class="li">Zonas reales</div><div class="li">Soporte por chat</div></div>
+    <div class="plan feat"><div class="tag">★ Recomendado</div><div class="pname">Competitivo</div><div class="price">$299<span>/mes</span></div><div class="li">Data Engine completo</div><div class="li">Análisis de video</div><div class="li">Ajustes semanales</div></div>
+    <div class="plan"><div class="tag"></div><div class="pname">Pro</div><div class="price">$799<span>/mes</span></div><div class="li">Todo lo anterior</div><div class="li">Mentoría 1 a 1</div><div class="li">Asistencia en carrera</div></div>
+  </div>
+  <a class="btn">Hablemos →</a>
+  <div class="foot">
+    <div class="mark"><svg width="42" height="42" viewBox="0 0 200 200"><polygon points="38,56 92,56 83,74 47,74" fill="#E11D2E"/><polygon points="108,56 162,56 153,74 117,74" fill="#E11D2E"/><polygon points="42,82 158,82 100,178" fill="#E11D2E"/><polygon points="76,93 124,93 100,132" fill="#0a1430"/></svg></div>
+    <div class="wm">FAST TIMES</div>
+    <div class="handle">link en bio</div>
+  </div>
+</div>
+</body></html>

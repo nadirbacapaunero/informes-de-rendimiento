@@ -1,0 +1,22 @@
+# Fasttimes FIT Analysis Tool - Frontend Dependencies
+# Core Framework
+streamlit>=1.35.0
+
+# Data Processing
+pandas>=2.0.0
+numpy>=1.26.0
+
+# Data Visualization
+plotly>=5.20.0
+
+# File Parsing
+fitparse>=1.2.0
+
+# PDF Generation
+fpdf2>=2.7.0
+
+# Optional: Performance & Caching
+streamlit-cache2>=1.5.0
+
+# Optional: Enhanced UI
+streamlit-lottie>=0.1.2
